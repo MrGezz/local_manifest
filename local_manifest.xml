@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
   <project name="MrGezz/android_device_sony_fuji-common" path="device/sony/fuji-common" />
+  
+  <project name="MrGezz/android_device_semc_fuji" path="device/semc/fuji" />
 
   <project name="MrGezz/android_device_aoba" path="device/sony/aoba" />
 
