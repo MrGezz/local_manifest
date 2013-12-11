@@ -1,5 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
-  <project name="MrGezz/android_device_sony_aoba" path="device/sony/aoba" remote="github" revision="cm-11.0" />
-  <project name="MrGezz/android_kernel_sony_aoba" path="kernel/sony/aoba" remote="github" revision="cm-11.0" />
+  <project name="MrGezz/android_device_sony_fuji-common" path="device/sony/fuji-common" />
+
+  <project name="MrGezz/android_device_aoba" path="device/sony/aoba" />
+
+  <project name="MrGezz/android_kernel_sony_aoba" path="kernel/sony/aoba" />
+
+  <project name="MrGezz/proprietary_vendor_semc" path="vendor/semc" />
+
+  <project name="MrGezz/android_hardware_qcom_display-legacy" path="hardware/qcom/display-legacy" revision="cm-10.1" />
+  <project name="MrGezz/android_hardware_qcom_media-legacy" path="hardware/qcom/media-legacy" revision="cm-10.1" />
 </manifest>
