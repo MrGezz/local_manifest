@@ -7,7 +7,6 @@
   <project name="MrGezz/android_device_sony_aoba" path="device/sony/aoba" />
   <project path="kernel/sony/msm8x60" name="android_kernel_sony_msm8x60" remote="opensemc" revision="kk_chocolate_rmfx" />
   <project name="OpenSEMC/proprietary_vendor_sony" path="vendor/sony" />
-  <project path="hardware/qcom/display" name="android_hardware_qcom_display" remote="opensemc" revision="cm-10.1" groups="qcom" />
   <project name="OpenSEMC/android_hardware_qcom_display-legacy" path="hardware/qcom/display-legacy" />
   <project name="OpenSEMC/android_hardware_qcom_media-legacy" path="hardware/qcom/media-legacy" />
   <project name="OpenSEMC/android_hardware_qcom_audio-caf" path="hardware/qcom/audio-caf" />
