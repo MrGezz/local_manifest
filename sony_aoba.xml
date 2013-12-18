@@ -3,22 +3,18 @@
   <remote  name="opensemc"
            fetch="git://github.com/OpenSEMC/" />
            
-  <project name="OpenSEMC/android_device_sony_fuji-common" path="device/sony/fuji-common" />
+  <project path="device/sony/fuji-common" name="android_device_sony_fuji-common" remote="opensemc" revision="cm-11.0" />
   <project name="MrGezz/android_device_sony_aoba" path="device/sony/aoba" />
   <project path="kernel/sony/msm8x60" name="android_kernel_sony_msm8x60" remote="opensemc" revision="kk_chocolate_rmfx" />
-  <project name="OpenSEMC/proprietary_vendor_sony" path="vendor/sony" />
-  <project name="OpenSEMC/android_hardware_qcom_display-legacy" path="hardware/qcom/display-legacy" />
-  <project name="OpenSEMC/android_hardware_qcom_media-legacy" path="hardware/qcom/media-legacy" />
-  <project name="OpenSEMC/android_hardware_qcom_audio-caf" path="hardware/qcom/audio-caf" />
-  <project name="OpenSEMC/vendor_broadcom_wlan" path="vendor/broadcom/wlan" />
-  <project name="OpenSEMC/android_hardware_qcom_display-caf" path="hardware/qcom/display-caf" />
-  <project name="OpenSEMC/android_hardware_qcom_media" path="hardware/qcom/media" />
-  <project name="OpenSEMC/android_frameworks_native" path="frameworks/native" />
-  <project name="OpenSEMC/android_frameworks_av" path="frameworks/av" />
-  <project name="OpenSEMC/android_frameworks_opt_telephony" path="frameworks/opt/telephony" />
-  <project name="OpenSEMC/android_hardware_qcom_gps" path="hardware/qcom/gps" />
-  <project name="OpenSEMC/android_hardware_qcom_bt" path="hardware/qcom/bt" />
-  <project name="OpenSEMC/android_hardware_msm7k" path="hardware/msm7k" />
+  <project path="vendor/sony" name="proprietary_vendor_sony" remote="opensemc" revision="cm-11.0" />
+  <project path="hardware/qcom/display-caf" name="android_hardware_qcom_display-caf" remote="opensemc" revision="cm-11.0" groups="qcom" />
+  <project path="hardware/qcom/audio-caf" name="android_hardware_qcom_audio-caf" remote="opensemc" revision="cm-11.0" groups="caf" />
+  <project path="vendor/broadcom/wlan" name="vendor_broadcom_wlan" remote="opensemc" revision="cm-11.0" />
+  <project path="hardware/qcom/media" name="android_hardware_qcom_media" remote="opensemc" revision="cm-11.0" groups="qcom" />  
+  <project path="frameworks/native" name="android_frameworks_native" remote="opensemc" revision="cm-11.0" groups="pdk" />
+  <project path="frameworks/av" name="android_frameworks_av" remote="opensemc" revision="cm-11.0" groups="pdk" />
+  <project path="hardware/qcom/gps" name="android_hardware_qcom_gps" remote="opensemc" revision="cm-11.0" groups="qcom" />
+  <project path="hardware/qcom/bt" name="android_hardware_qcom_bt" remote="opensemc" revision="cm-11.0" groups="qcom" />
   <project path="bootable/recovery" name="android_bootable_recovery" remote="opensemc" revision="twrp2.7-kk" />
   
 </manifest>
