@@ -22,5 +22,19 @@
 
 
   <project name="CyanogenMod/android_hardware_sony_DASH" path="hardware/sony/DASH" />
+  
+  
+  <remove-project path="bootable/recovery" name="CyanogenMod/android_bootable_recovery" />
+  <remove-project path="hardware/qcom/display-caf" name="CyanogenMod/android_hardware_qcom_display-caf" groups="caf" />
+  <remove-project path="hardware/qcom/audio-caf" name="CyanogenMod/android_hardware_qcom_audio-caf" groups="caf" />
+  <remove-project path="hardware/qcom/media" name="CyanogenMod/android_hardware_qcom_media" groups="qcom" />
+  <remove-project path="frameworks/native" name="CyanogenMod/android_frameworks_native" groups="pdk" />
+  <remove-project path="frameworks/av" name="CyanogenMod/android_frameworks_av" groups="pdk" />
+  <remove-project path="hardware/qcom/gps" name="CyanogenMod/android_hardware_qcom_gps" groups="qcom" />
+  <remove-project path="hardware/qcom/bt" name="CyanogenMod/android_hardware_qcom_bt" groups="qcom" />
+  
+  
+  
+  
 
 </manifest>
