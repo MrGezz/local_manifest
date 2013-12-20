@@ -3,8 +3,11 @@
   <remote  name="opensemc"
            fetch="git://github.com/OpenSEMC/" />
            
+  <remote  name="mrgezz"
+           fetch="git://github.com/MrGezz/" />
+  
   <project path="device/sony/fuji-common" name="android_device_sony_fuji-common" remote="opensemc" revision="cm-11.0" />
-  <project name="MrGezz/android_device_sony_aoba" path="device/sony/aoba" />
+  <project path="device/sony/aoba" name="android_device_sony_aoba" remote="mrgezz" revision="cm-11.0" />
   <project path="kernel/sony/msm8x60" name="android_kernel_sony_msm8x60" remote="opensemc" revision="kk_chocolate_rmfx" />
   <project path="vendor/sony" name="proprietary_vendor_sony" remote="opensemc" revision="cm-11.0" />
   <project path="hardware/qcom/display-caf" name="android_hardware_qcom_display-caf" remote="opensemc" revision="cm-11.0" groups="qcom" />
@@ -15,6 +18,7 @@
   <project path="frameworks/av" name="android_frameworks_av" remote="opensemc" revision="cm-11.0" groups="pdk" />
   <project path="hardware/qcom/gps" name="android_hardware_qcom_gps" remote="opensemc" revision="cm-11.0" groups="qcom" />
   <project path="hardware/qcom/bt" name="android_hardware_qcom_bt" remote="opensemc" revision="cm-11.0" groups="qcom" />
+  <project path="bootable/recovery" name="android_bootable_recovery" remote="opensemc" revision="twrp2.7-kk" />
 
 
   <project name="CyanogenMod/android_hardware_sony_DASH" path="hardware/sony/DASH" />
