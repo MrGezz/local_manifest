@@ -1,12 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
-  <remote  name="opensemc"
-           fetch="git://github.com/OpenSEMC/" />
-           
+  
   <remote  name="mrgezz"
            fetch="git://github.com/MrGezz/" />
   
   <project path="device/sony/aoba" name="android_device_sony_aoba" remote="mrgezz" revision="cm-11.0" />
   
-  <remove-project path="device/sony/aoba" name="android_device_sony_aoba" remote="opensemc" revision="cm-11.0"/>
 </manifest>
