@@ -5,5 +5,6 @@
            fetch="git://github.com/MrGezz/" />
   
   <project path="device/sony/aoba" name="android_device_sony_aoba" remote="mrgezz" revision="cm-11.0" />
+  <project path="vendor/sony" name="MrGezz/proprietary_vendor_semc" remote="mrgezz" revision="cm-11.0" />
   
 </manifest>
