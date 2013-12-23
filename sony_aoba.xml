@@ -5,7 +5,7 @@
            fetch="git://github.com/MrGezz/" />
   
   <project path="device/sony/aoba" name="android_device_sony_aoba" remote="mrgezz" revision="cm-11.0" />
-  <project path="hardware/sony" name="android_hardware_sony_DASH" />
+  <project path="hardware/sony" name="CyanogenMod/android_hardware_sony_DASH" />
   <project path="device/sony/common" name="CyanogenMod/android_device_sony_common" />
   
   
