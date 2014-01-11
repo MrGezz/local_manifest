@@ -7,7 +7,6 @@
   <project path="device/sony/aoba" name="android_device_sony_aoba" remote="mrgezz" revision="cm-11.0" />
   <project name="SaberMod/android_prebuilts_gcc_linux-x86_arm_sabermod-arm-linux-androideabi-4.8" path="prebuilts/gcc/linux-x86/arm/arm-eabi-4.8" remote="github" revision="sm-kk-mr1"/>
   <project name="SaberMod/android_prebuilts_gcc_linux-x86_arm_sabermod-arm-eabi-4.8" path="prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.8" remote="github" revision="sm-kk-mr1"/>
-  <project name="WindowsX/android_build" path="build" remote="github" revision="cm-10.2"/>
 
 </manifest>
   
