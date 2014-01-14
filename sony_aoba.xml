@@ -2,6 +2,7 @@
 <manifest>
 
   <project path="device/sony/aoba" name="MrGezz/android_device_sony_aoba" remote="github" revision="cm-11.0" />
+  <remove-project path="device/sony/aoba" name="android_device_sony_aoba" remote="opensemc" revision="cm-11.0" />
   
 </manifest>
   
