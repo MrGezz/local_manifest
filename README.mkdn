@@ -1,0 +1,23 @@
+Getting Started
+---------------
+
+To get started with Android/BeanStalk, you'll need to get
+familiar with [Git and Repo](http://source.android.com/source/using-repo.html).
+
+To initialize your local repository using the BeanStalk trees, use a command like this:
+
+    repo init -u https://github.com/MrGezz/local_manifest.git -b beanstalk
+
+Then to sync up:
+
+    repo sync
+
+Please see any of the official beanstalk XDA threads for building instructions.
+
+For more information on this Github Organization and how it is structured, 
+please [read the wiki article](http://wiki.cyanogenmod.org/w/Github_Organization)
+
+Buildbot
+--------
+
+All supported devices are built nightly and periodically as changes are committed to ensure the source trees remain buildable.
