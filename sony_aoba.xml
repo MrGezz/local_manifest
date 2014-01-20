@@ -3,7 +3,11 @@
 
   <project path="bootable/recovery" name="OpenSEMC/android_bootable_recovery" remote="github" revision="twrp2.7-kk" />
   <remove-project path="bootable/recovery" name="CyanogenMod/android_bootable_recovery" />
+  <remove-project path="packages/providers/ContactsProvider" name="scotthartbti/android_packages_providers_ContactsProvider" revision="kk44" />
+  <project path="packages/providers/ContactsProvider" name="CyanogenMod/android_packages_providers_ContactsProvider" />
  
+
+
   <remove-project path="hardware/qcom/audio" name="CyanogenMod/android_hardware_qcom_audio" groups="qcom" />
   <remove-project path="hardware/qcom/audio-caf" name="CyanogenMod/android_hardware_qcom_audio-caf" groups="caf" />
   <remove-project path="hardware/qcom/bt" name="CyanogenMod/android_hardware_qcom_bt" groups="qcom" />
@@ -12,10 +16,13 @@
   <remove-project path="hardware/qcom/display-caf" name="CyanogenMod/android_hardware_qcom_display-caf" groups="caf" />
   <remove-project path="hardware/qcom/media" name="CyanogenMod/android_hardware_qcom_media" groups="qcom" />
   <remove-project path="hardware/qcom/media-caf" name="CyanogenMod/android_hardware_qcom_media-caf" groups="caf" />
- 
-  <project path="device/sony/aoba" name="MrGezz/android_device_sony_hikari" remote="github" revision="beanstalk4.4" />
+  <remove-project path="packages/apps/BeanStalkPapers" name="scotthartbti/android_packages_apps_BeanStalkPapers" revision="kk44" />
+  <remove-project path="packages/apps/BeanStalkOTA" name="scotthartbti/android_packages_apps_BeanStalkOTA" revision="kk44" />
+  <remove-project path="packages/apps/StalkExplorer" name="scotthartbti/android_packages_apps_StalkExplorer" revision="kk44" />
+
+  <project path="device/sony/aoba" name="MrGezz/android_device_sony_aoba" remote="github" revision="beanstalk4.4" />
   <project path="device/sony/fuji-common" name="deedwar/android_device_sony_fuji-common" remote="github" revision="bs44-linaro" />
-  <project path="kernel/sony/msm8x60" name="deedwar/android_kernel_sony_msm8x60" remote="github" revision="elite6" />
+  <project path="kernel/sony/msm8x60" name="MrGezz/android_kernel_sony_msm8x60" remote="github" revision="elite6" />
   <project path="vendor/broadcom/wlan" name="OpenSEMC/vendor_broadcom_wlan" remote="github" revision="cm-11.0" />
   <project path="vendor/sony" name="OpenSEMC/proprietary_vendor_sony" remote="github" revision="cm-11.0" />
   <project path="hardware/qcom/media" name="OpenSEMC/android_hardware_qcom_media" remote="github" revision="cm-11.0" groups="qcom" /> 
@@ -23,4 +30,5 @@
   <project path="hardware/qcom/bt" name="OpenSEMC/android_hardware_qcom_bt" remote="github" revision="cm-11.0" groups="qcom" />
   <project path="hardware/qcom/display-caf" name="OpenSEMC/android_hardware_qcom_display-caf" remote="github" revision="cm-11.0" groups="qcom" />
   <project path="hardware/qcom/gps" name="OpenSEMC/android_hardware_qcom_gps" remote="github" revision="cm-11.0" groups="qcom" />
+  <project path="prebuilt/linux-x86/toolchain/linaro" name="deedwar/Linaro" remote="github" revision="master"/>
 </manifest>
