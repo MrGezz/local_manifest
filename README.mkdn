@@ -21,3 +21,11 @@ Buildbot
 --------
 
 All supported devices are built nightly and periodically as changes are committed to ensure the source trees remain buildable.
+
+using my manifests :
+  
+     curl https://raw2.github.com/MrGezz/local_manifest/beanstalk/sony_aoba.xml > ~/android/beanstalk4.4/.repo/local_manifests/sony_aoba.xml
+
+^^^^^^^^^^^^^^^^^^^^    
+for my own reference
+ 
