@@ -3,7 +3,6 @@
   
   <project path="device/sony/aoba" name="MrGezz/android_device_sony_aoba" remote="github" revision="slim4.4" />
   <project path="device/sony/fuji-common" name="deedwar/android_device_sony_fuji-common" remote="github" revision="bs44-linaro" />
-
   <project path="kernel/sony/msm8x60" name="MrGezz/android_kernel_sony_msm8x60" remote="github" revision="elite6" />  
   
   <project path="bootable/recovery" name="OpenSEMC/android_bootable_recovery" remote="github" revision="twrp2.7-kk" />
@@ -18,12 +17,11 @@
   <project path="hardware/qcom/media" name="OpenSEMC/android_hardware_qcom_media" remote="github" revision="cm-11.0" groups="qcom" />
   <remove-project path="hardware/qcom/media" name="SlimRoms/hardware_qcom_media" remote="github" revision="kk4.4" />
 
-  <project path="hardware/qcom/display-caf" name="OpenSEMC/android_hardware_qcom_display-caf" remote="github" revision="cm-11.0" groups="qcom" />
-  <remove-project path="hardware/qcom/display" name="SlimRoms/hardware_qcom_display" remote="github" revision="kk4.4" />
-
-  <project path="hardware/qcom/audio-caf" name="OpenSEMC/android_hardware_qcom_audio-caf" remote="github" revision="cm-11.0" groups="caf" />
+  <project path="hardware/qcom/audio-caf" name="CyanogenMod/android_hardware_qcom_audio-caf" remote="github" revision="cm-11.0" groups="caf" />
   <remove-project path="hardware/qcom/audio" name="SlimRoms/hardware_qcom_audio" remote="github" revision="kk4.4" />
 
+  <project path="hardware/qcom/display-caf" name="OpenSEMC/android_hardware_qcom_display-caf" remote="github" revision="cm-11.0" groups="qcom" />
+  <remove-project path="hardware/qcom/display" name="SlimRoms/hardware_qcom_display" remote="github" revision="kk4.4" />
 
   <project path="vendor/broadcom/wlan" name="OpenSEMC/vendor_broadcom_wlan" remote="github" revision="cm-11.0" />
   <project path="vendor/sony" name="OpenSEMC/proprietary_vendor_sony" remote="github" revision="cm-11.0" />
