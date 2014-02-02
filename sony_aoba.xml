@@ -2,10 +2,9 @@
 <manifest>
 
   <project path="device/sony/aoba" name="MrGezz/android_device_sony_aoba" remote="github" revision="cm-11.0" />
-  <project path="kernel/sony/msm8x60" name="OpenSEMC/android_kernel_sony_msm8x60" remote="github" revision="kk_elite" />
   <project path="prebuilt/linux-x86/toolchain/linaro" name="deedwar/Linaro" remote="github" revision="master" />
-  <project path="device/sony/fuji-common" name="deedwar/android_device_sony_fuji-common" remote="github" revision="bs44-linaro" />
-  <project path="kernel/sony/msm8x60" name="deedwar/android_kernel_sony_msm8x60" remote="github" revision="elite6" />
+  <project path="device/sony/fuji-common" name="MrGezz/android_device_sony_fuji-common" remote="github" revision="bs44-linaro" />
+  <project path="kernel/sony/msm8x60" name="MrGezz/android_kernel_sony_msm8x60" remote="github" revision="elite7" />
   
 
   <project path="bootable/recovery" name="OpenSEMC/android_bootable_recovery" remote="github" revision="twrp2.7-kk" />
