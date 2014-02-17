@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
 
-  <project path="device/sony/aoba" name="MrGezz/android_device_sony_aoba" remote="github" revision="cm-11.0" />
+  <project path="device/sony/aoba" name="MrGezz/android_device_sony_aoba" remote="github" revision="slim4.4" />
   <project path="device/sony/fuji-common" name="deedwar/android_device_sony_fuji-common" remote="github" revision="beanstalk-kitkat" />
   <project path="kernel/sony/msm8x60" name="MrGezz/android_kernel_sony_msm8x60" remote="github" revision="elite-1.5" />
   
