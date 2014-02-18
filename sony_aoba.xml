@@ -3,16 +3,16 @@
 
   <project path="device/sony/aoba" name="MrGezz/android_device_sony_aoba" remote="github" revision="cm-11.0" />
   <project path="device/sony/fuji-common" name="deedwar/android_device_sony_fuji-common" remote="github" revision="beanstalk-kitkat" />
-  <project path="kernel/sony/msm8x60" name="MrGezz/android_kernel_sony_msm8x60" remote="github" revision="elite-1.4" />
+  <project path="kernel/sony/msm8x60" name="MrGezz/android_kernel_sony_msm8x60" remote="github" revision="elite-1.5" />
   
   <remove-project path="bootable/recovery" name="CyanogenMod/android_bootable_recovery" />  
-  <project path="bootable/recovery" name="OpenSEMC/android_bootable_recovery" remote="github" revision="twrp2.7-kk" />
+  <project path="bootable/recovery" name="MrGezz/android_bootable_recovery" remote="github" revision="twrp2.7-kk" />
 
   <remove-project path="frameworks/av" name="CyanogenMod/android_frameworks_av" groups="pdk" />
   <project path="frameworks/av" name="OpenSEMC/android_frameworks_av" remote="github" revision="cm-11.0" groups="pdk" />
 
   <remove-project path="frameworks/native" name="CyanogenMod/android_frameworks_native" groups="pdk" />  
-  <project path="frameworks/native" name="OpenSEMC/android_frameworks_native" remote="github" revision="cm-11.0" groups="pdk" />
+  <project path="frameworks/native" name="deedwar/android_frameworks_native" remote="github" revision="beanstalk-kitkat" groups="pdk" />
 
   <remove-project path="hardware/qcom/audio" name="CyanogenMod/android_hardware_qcom_audio" groups="qcom" />
   <remove-project path="hardware/qcom/audio-caf" name="CyanogenMod/android_hardware_qcom_audio-caf" groups="caf" />    
