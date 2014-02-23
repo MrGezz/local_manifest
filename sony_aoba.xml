@@ -1,10 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
-
-  <remote  name="mrgezz"
-           fetch="git://github.com/MrGezz/" />
+  <project path="device/sony/aoba" name="MrGezz/android_device_sony_aoba" remote="github" revision="Omni-kitkat" />
+  <project path="device/sony/fuji-common" name="MrGezz/android_device_sony_fuji-common" remote="github" revision="omni-kitkat" />
+  <project path="kernel/sony/msm8x60" name="deedwar/android_kernel_sony_msm8x60" remote="github" revision="elite-1.6" />
+  <project path="hardware/qcom/gps" name="OpenSEMC/android_hardware_qcom_gps" remote="github" revision="cm-11.0" groups="qcom" />
+  <project path="vendor/broadcom/wlan" name="OpenSEMC/vendor_broadcom_wlan" remote="github" revision="cm-11.0" />
+  <project path="vendor/sony" name="OpenSEMC/proprietary_vendor_sony" remote="github" revision="cm-11.0" />
+  <project path="prebuilt" name="Hellybean/android_prebuilt" remote="github" revision="cm-11.0" />
   
-  <project path="device/sony/aoba" name="android_device_sony_aoba" remote="mrgezz" revision="omni-4.4" />
-
-
+  <remove-project path="hardware/qcom/audio-caf" name="android_hardware_qcom_audio-caf" remote="omnirom" revision="android-4.4" />
+  <project path="hardware/qcom/audio-caf" name="deedwar/android_hardware_qcom_audio-caf" remote="github" revision="omni-kitkat" />
+  <project path="prebuilts/gcc/linux-x86/arm/LINARO-master" name="Cl3Kener/LINARO" remote="github" revision="master" />
+  
+  <remove-project path="hardware/qcom/media" name="android_hardware_qcom_media" remote="omnirom" revision="android-4.4" />
+  <project path="hardware/qcom/media" name="OpenSEMC/android_hardware_qcom_media" remote="github" revision="cm-11.0" groups="qcom" />
+  
+  <remove-project path="hardware/qcom/display-caf" name="android_hardware_qcom_display-caf" remote="omnirom" revision="android-4.4" />
+  <project path="hardware/qcom/display-caf" name="OpenSEMC/android_hardware_qcom_display-caf" remote="github" revision="cm-11.0" groups="qcom" />
+  
+  <remove-project path="frameworks/native" name="android_frameworks_native" remote="omnirom" revision="android-4.4" />
+  <project path="frameworks/native" name="deedwar/android_frameworks_native" remote="github" revision="omni-kitkat" />
 </manifest>
+
