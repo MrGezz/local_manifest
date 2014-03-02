@@ -2,33 +2,34 @@
 <manifest>
 
   <project path="device/sony/aoba" name="MrGezz/android_device_sony_aoba" remote="github" revision="beanstalk4.4" />
-  <project path="device/sony/hikari" name="deedwar/android_device_sony_hikari" remote="github" revision="beanstalk-kitkat" />
-  <project path="device/sony/fuji-common" name="deedwar/android_device_sony_fuji-common" remote="github" revision="beanstalk-kitkat" />
-  <project path="kernel/sony/msm8x60" name="MrGezz/android_kernel_sony_msm8x60" remote="github" revision="elite7" />
-  
+  <project path="device/sony/fuji-common" name="MrGezz/android_device_sony_fuji-common" remote="github" revision="beanstalk-kitkat" />
+  <project path="kernel/sony/msm8x60" name="MrGezz/evolve" remote="github" revision="evolve-1.6" />
+
   <remove-project path="bootable/recovery" name="CyanogenMod/android_bootable_recovery" />
-  <project path="bootable/recovery" name="OpenSEMC/android_bootable_recovery" remote="github" revision="twrp2.7-kk" />
-  
+  <project path="bootable/recovery" name="SlimRoms/bootable_recovery" remote="github" revision="kk4.4"/>
+
   <remove-project path="hardware/qcom/bt" name="CyanogenMod/android_hardware_qcom_bt" groups="qcom" />
   <project path="hardware/qcom/bt" name="OpenSEMC/android_hardware_qcom_bt" remote="github" revision="cm-11.0" groups="qcom" />
-  
+
   <remove-project path="hardware/qcom/gps" name="CyanogenMod/android_hardware_qcom_gps" groups="qcom" />
   <project path="hardware/qcom/gps" name="OpenSEMC/android_hardware_qcom_gps" remote="github" revision="cm-11.0" groups="qcom" />
-  
+
+  <remove-project path="hardware/qcom/media-caf" name="CyanogenMod/android_hardware_qcom_media-caf" groups="caf" />
   <remove-project path="hardware/qcom/media" name="CyanogenMod/android_hardware_qcom_media" groups="qcom" />
-  <project path="hardware/qcom/media" name="Arakmar/android_hardware_qcom_media" remote="github" revision="cm-11.0" groups="qcom" />
-  
-  <remove-project path="hardware/qcom/audio-caf" name="CyanogenMod/android_hardware_qcom_audio-caf" groups="caf" />
-  <project path="hardware/qcom/audio-caf" name="Arakmar/android_hardware_qcom_audio-caf" remote="github" revision="cm-11.0" groups="caf" />
-  
-  <remove-project path="hardware/qcom/display-caf" name="CyanogenMod/android_hardware_qcom_display-caf" groups="caf" />
-  <project path="hardware/qcom/display-caf" name="Arakmar/android_hardware_qcom_display-caf" remote="github" revision="cm-11.0" groups="qcom" />
+  <project path="hardware/qcom/media" name="deedwar/android_hardware_qcom_media" remote="github" revision="cm-11.0" groups="qcom" />
+
   <project path="vendor/broadcom/wlan" name="OpenSEMC/vendor_broadcom_wlan" remote="github" revision="cm-11.0" />
   <project path="vendor/sony" name="OpenSEMC/proprietary_vendor_sony" remote="github" revision="cm-11.0" />
-  
+
+  <remove-project path="frameworks/native" name="scotthartbti/frameworks_native" revision="kk44" />
+  <project path="frameworks/native" name="deedwar/android_frameworks_native" remote="github" revision="beanstalk-kitkat" />
+
+  <remove-project path="vendor/cm" name="scotthartbti/proprietary_vendor_cm" revision="kk44" />
+  <project path="vendor/cm" name="deedwar/proprietary_vendor_cm" remote="github" revision="beanstalk-kitkat" />
+
+<!--Linaro toolchain-->  
   <remove-project path="prebuilt" name="CyanogenMod/android_prebuilt" />
   <project path="prebuilt" name="Hellybean/android_prebuilt" remote="github" revision="cm-11.0" />
   <project path="prebuilts/gcc/linux-x86/arm/LINARO-master" name="Cl3Kener/LINARO" remote="github" revision="master" />
-  
-</manifest>
 
+</manifest>
