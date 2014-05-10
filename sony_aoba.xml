@@ -1,35 +1,36 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
-<!--Device-Projects-->  
-  <project path="device/sony/aoba" name="MrGezz/android_device_sony_aoba" remote="github" revision="beanstalk4.4" />
-  <project path="device/sony/fuji-common" name="MrGezz/android_device_sony_fuji-common" remote="github" revision="beanstalk-kitkat" />
-  <project path="kernel/sony/msm8x60" name="MrGezz/evolve" remote="github" revision="evolve-2.1" />
 
-<!--remove-Projects-->  
-  <remove-project path="bootable/recovery" name="CyanogenMod/android_bootable_recovery" />  
-  <remove-project path="frameworks/av" name="CyanogenMod/android_frameworks_av" groups="pdk" />
-  <remove-project path="frameworks/native" name="CyanogenMod/android_frameworks_native" groups="pdk" />  
-  <remove-project path="hardware/qcom/bt" name="CyanogenMod/android_hardware_qcom_bt" groups="qcom" />  
-  <remove-project path="hardware/qcom/gps" name="CyanogenMod/android_hardware_qcom_gps" groups="qcom" /> 
-  <remove-project path="hardware/qcom/audio-caf" name="CyanogenMod/android_hardware_qcom_audio-caf" groups="caf" />
-  <remove-project path="hardware/qcom/display-caf" name="CyanogenMod/android_hardware_qcom_display-caf" groups="caf" />
+<!--Device-projects-->
+  <project path="device/sony/aoba" name="MrGezz/android_device_sony_aoba" remote="github" revision="cm-11.0" />
+    <copyfile dest="MrGezz.sh" src="MrGezz.sh"/>
+  </project>
 
-<!--OpenSEMC-Projects-->  
-  <project path="frameworks/av" name="OpenSEMC/android_frameworks_av" remote="github" revision="cm-11.0" groups="pdk" />
-  <project path="frameworks/native" name="OpenSEMC/android_frameworks_native" remote="github" revision="cm-11.0" groups="pdk" />
-  <project path="hardware/qcom/bt" name="OpenSEMC/android_hardware_qcom_bt" remote="github" revision="cm-11.0" groups="qcom" />
-  <project path="hardware/qcom/gps" name="OpenSEMC/android_hardware_qcom_gps" remote="github" revision="cm-11.0" groups="qcom" />
+  <project path="device/sony/fuji-common" name="MrGezz/android_device_sony_fuji-common" remote="github" revision="cm-11.0-old" />
+  <project path="kernel/sony/msm8x60" name="MrGezz/evolve" remote="github" revision="evolve-1.15" />
   <project path="vendor/broadcom/wlan" name="OpenSEMC/vendor_broadcom_wlan" remote="github" revision="cm-11.0" />
   <project path="vendor/sony" name="OpenSEMC/proprietary_vendor_sony" remote="github" revision="cm-11.0" />
-  <project path="hardware/qcom/audio-caf" name="OpenSEMC/android_hardware_qcom_audio-caf" remote="github" revision="cm-11.0" groups="caf" />
-  <project path="hardware/qcom/display-caf" name="OpenSEMC/android_hardware_qcom_display-caf" remote="github" revision="cm-11.0" groups="qcom" />
 
-<!--SlimRoms-Recovery-->  
+<!--remove-projects-->
+  <remove-project path="bootable/recovery-cm" name="CyanogenMod/android_bootable_recovery-cm" />
+  <remove-project path="bootable/recovery" name="CyanogenMod/android_bootable_recovery" />
+  <remove-project path="hardware/qcom/bt" name="CyanogenMod/android_hardware_qcom_bt" groups="qcom" />
+  <remove-project path="hardware/qcom/gps" name="CyanogenMod/android_hardware_qcom_gps" groups="qcom" />
+  <remove-project path="frameworks/av" name="CyanogenMod/android_frameworks_av" groups="pdk" />
+
+<!--OpenSEMC-projects-->
+  <project path="hardware/qcom/bt" name="OpenSEMC/android_hardware_qcom_bt" remote="github" revision="cm-11.0" groups="qcom" />
+  <project path="hardware/qcom/gps" name="OpenSEMC/android_hardware_qcom_gps" remote="github" revision="cm-11.0" groups="qcom" />
+  
+<!--SimRoms-recovery-->
   <project path="bootable/recovery" name="SlimRoms/bootable_recovery" remote="github" revision="kk4.4"/>
+  <project path="frameworks/av" name="MrGezz/android_frameworks_av" remote="github" revision="cm-11.0" groups="pdk" />
 
-<!--Linaro-toolchain-->  
+<!--Cl3Kener's-Tools-->
   <remove-project path="prebuilt" name="CyanogenMod/android_prebuilt" />
   <project path="prebuilt" name="Hellybean/android_prebuilt" remote="github" revision="cm-11.0" />
-  <project path="prebuilts/gcc/linux-x86/arm/LINARO-master" name="Cl3Kener/LINARO" remote="github" revision="master" />
-
+  <project path="prebuilt/linux-x86/toolchain/LINARO-KERNEL" name="UBERUTILS/LINARO-KERNEL" remote="github" revision="master" />
+  <project path="prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.8" name="UBERUTILS/LINARO" remote="github" revision="master" />
+  <project path="prebuilts/gcc/linux-x86/arm/arm-eabi-4.8" name="UBERUTILS/LINARO-KERNEL" remote="github" revision="master" />
 </manifest>
+
