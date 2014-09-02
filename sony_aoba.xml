@@ -1,33 +1,63 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
+<remote  name="mrgezz" fetch="git://github.com/MrGezz/" />
+<remote  name="aospxs" fetch="git://github.com/AOSPXS/" />
+<remote  name="github" fetch="git://github.com/" />
 
-<!--Device-projects-->
-  <project path="device/sony/aoba" name="MrGezz/android_device_sony_aoba" remote="github" revision="cm-11.0" />
-  <project path="device/sony/fuji-common" name="MrGezz/android_device_sony_fuji-common" remote="github" revision="cm-11.0-old" />
-  <project path="kernel/sony/msm8x60" name="MrGezz/evolve" remote="github" revision="evolve-1.15" />
-  <project path="vendor/broadcom/wlan" name="OpenSEMC/vendor_broadcom_wlan" remote="github" revision="cm-11.0" />
-  <project path="vendor/sony" name="OpenSEMC/proprietary_vendor_sony" remote="github" revision="cm-11.0" />
+<!--unused repos -->
+  <remove-project path="device/asus/deb" name="device/asus/deb" groups="device,flo" />
+  <remove-project path="device/asus/flo" name="device/asus/flo" groups="device,flo" />
+  <remove-project path="device/asus/flo-kernel" name="device/asus/flo-kernel" groups="device,flo" />
+  <remove-project path="device/asus/grouper" name="device/asus/grouper" groups="device,grouper" />
+  <remove-project path="device/asus/tilapia" name="device/asus/tilapia" groups="device,grouper" />
+  <remove-project path="device/lge/hammerhead" name="device/lge/hammerhead" groups="device,hammerhead" />
+  <remove-project path="device/lge/hammerhead-kernel" name="device/lge/hammerhead-kernel" groups="device,hammerhead" />
+  <remove-project path="device/lge/mako" name="device/lge/mako" groups="device,mako" />
+  <remove-project path="device/lge/mako-kernel" name="device/lge/mako-kernel" groups="device,mako" />
+  <remove-project path="device/samsung/manta" name="device/samsung/manta" groups="device,manta" />
 
-<!--remove-projects-->
-  <remove-project path="bootable/recovery-cm" name="CyanogenMod/android_bootable_recovery-cm" />
-  <remove-project path="bootable/recovery" name="CyanogenMod/android_bootable_recovery" />
-  <remove-project path="hardware/qcom/bt" name="CyanogenMod/android_hardware_qcom_bt" groups="qcom" />
-  <remove-project path="hardware/qcom/gps" name="CyanogenMod/android_hardware_qcom_gps" groups="qcom" />
-  <remove-project path="frameworks/av" name="CyanogenMod/android_frameworks_av" groups="pdk" />
+<!-- changed repos //-->
+  <remove-project path="bootable/recovery" name="platform/bootable/recovery" groups="pdk" />
+  <remove-project path="external/bluetooth/bluedroid" name="platform/external/bluetooth/bluedroid" groups="pdk" />
+  <remove-project path="external/libsepol" name="platform/external/libsepol" groups="pdk" />
+  <remove-project path="frameworks/base" name="platform/frameworks/base" />
+  <remove-project path="frameworks/native" name="platform/frameworks/native" groups="pdk" />
+  <remove-project path="frameworks/opt/telephony" name="platform/frameworks/opt/telephony" groups="pdk" />
+  <remove-project path="hardware/broadcom/libbt" name="platform/hardware/broadcom/libbt" groups="pdk" />
+  <remove-project path="hardware/libhardware" name="platform/hardware/libhardware" groups="pdk" />
+  <remove-project path="hardware/libhardware_legacy" name="platform/hardware/libhardware_legacy" groups="pdk" />
+  <remove-project path="packages/apps/Camera2" name="platform/packages/apps/Camera2" />
+  <remove-project path="packages/apps/Bluetooth" name="platform/packages/apps/Bluetooth" />
+  <remove-project path="packages/apps/Settings" name="platform/packages/apps/Settings" />
+  <remove-project path="packages/services/Telephony" name="platform/packages/services/Telephony" />
+  <remove-project path="system/core" name="platform/system/core" groups="pdk" />
+  <remove-project path="system/extras" name="platform/system/extras" groups="pdk" />
 
-<!--OpenSEMC-projects-->
-  <project path="hardware/qcom/bt" name="OpenSEMC/android_hardware_qcom_bt" remote="github" revision="cm-11.0" groups="qcom" />
-  <project path="hardware/qcom/gps" name="OpenSEMC/android_hardware_qcom_gps" remote="github" revision="cm-11.0" groups="qcom" />
-  
-<!--SimRoms-recovery-->
-  <project path="bootable/recovery" name="SlimRoms/bootable_recovery" remote="github" revision="kk4.4"/>
-  <project path="frameworks/av" name="MrGezz/android_frameworks_av" remote="github" revision="cm-11.0" groups="pdk" />
+ <!--specific changes -->
+  <project path="bootable/recovery" name="aosp_bootable_recovery" remote="aospxs" revision="aosp-4.4" />
+  <project path="external/bluetooth/bluedroid" name="aosp_external_bluetooth_bluedroid" remote="aospxs" revision="aosp-4.4" />
+  <project path="external/libsepol" name="aosp_external_libsepol" remote="aospxs" revision="aosp-4.4" />
+  <project path="frameworks/base" name="aosp_frameworks_base" remote="aospxs" revision="aospxs-4.4" />
+  <project path="frameworks/native" name="aosp_frameworks_native" remote="aospxs" revision="aosp-4.4" />
+  <project path="frameworks/opt/telephony" name="aosp_frameworks_opt_telephony" remote="aospxs" revision="aospxs-4.4" />
+  <project path="hardware/broadcom/libbt" name="aosp_hardware_broadcom_libbt" remote="aospxs" revision="aosp-4.4" />
+  <project path="hardware/libhardware" name="aosp_hardware_libhardware" remote="aospxs" revision="aosp-4.4" />
+  <project path="hardware/libhardware_legacy" name="aosp_hardware_libhardware_legacy" remote="aospxs" revision="aosp-4.4" />
+  <project path="packages/apps/Camera2" name="aosp_packages_apps_Camera2" remote="aospxs" revision="aosp-4.4" />
+  <project path="packages/apps/Bluetooth" name="aosp_packages_apps_Bluetooth" remote="aospxs" revision="aosp-4.4" />
+  <project path="packages/apps/Settings" name="aosp_packages_apps_Settings" remote="aospxs" revision="aospxs-4.4" />
+  <project path="packages/services/Telephony" name="aosp_packages_services_Telephony" remote="aospxs" revision="aospxs-4.4" />
+  <project path="system/core" name="aosp_system_core" remote="aospxs" revision="aospxs-4.4" />
+  <project path="system/extras" name="aosp_system_extras" remote="aospxs" revision="aosp-4.4" />
 
-<!--Cl3Kener's-Tools-->
-  <remove-project path="prebuilt" name="CyanogenMod/android_prebuilt" />
-  <project path="prebuilt" name="Hellybean/android_prebuilt" remote="github" revision="cm-11.0" />
-  <project path="prebuilt/linux-x86/toolchain/LINARO-KERNEL" name="UBERUTILS/LINARO-KERNEL" remote="github" revision="master" />
-  <project path="prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.8" name="UBERUTILS/LINARO" remote="github" revision="master" />
-  <project path="prebuilts/gcc/linux-x86/arm/arm-eabi-4.8" name="UBERUTILS/LINARO-KERNEL" remote="github" revision="master" />
-</manifest>
+<!--device repos-->
+  <project path="kernel/sony/msm8x60" name="kernel_sony_msm8x60" remote="mrgezz" revision="aosp-4.4-oc" />
+  <project path="device/sony/aoba" name="aosp_device_sony_aoba" remote="mrgezz" revision="aospxs-4.4" />
+  <project path="external/koush/Superuser" name="aosp_external_koush_Superuser" remote="aospxs" revision="aosp-4.4" /> 
+  <project path="external/koush/Widgets" name="aosp_external_koush_Widgets" remote="aospxs" revision="aosp-4.4" /> 
+  <project path="packages/apps/Torch" name="aosp_packages_apps_Torch" remote="aospxs" revision="aosp-4.4" />
+  <project path="vendor/aospxs" name="aosp_vendor_aospxs" remote="aospxs" revision="aospxs-4.4" />
+  <project path="vendor/sony" name="aosp_proprietary_vendor_sony" remote="mrgezz" revision="aosp-4.4" />
+  <project path="external/busybox" name="aosp_external_busybox" remote="aospxs" revision="aosp-4.4" />  
 
+</manifest> 
