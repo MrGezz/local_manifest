@@ -17,6 +17,7 @@
   <remove-project path="device/samsung/manta" name="device/samsung/manta" groups="device,manta" />
 
 <!-- changed repos //-->
+  <remove-project path="build" name="platform/build" groups="pdk" />  
   <remove-project path="bootable/recovery" name="platform/bootable/recovery" groups="pdk" />
   <remove-project path="external/bluetooth/bluedroid" name="platform/external/bluetooth/bluedroid" groups="pdk" />
   <remove-project path="external/libsepol" name="platform/external/libsepol" groups="pdk" />
@@ -34,6 +35,7 @@
   <remove-project path="system/extras" name="platform/system/extras" groups="pdk" />
 
  <!--specific changes -->
+  <project path="build" name="aosp_build" remote="aospxs" revision="aospxs-4.4" groups="pdk" />
   <project path="bootable/recovery" name="aosp_bootable_recovery" remote="aospxs" revision="aosp-4.4" />
   <project path="external/bluetooth/bluedroid" name="aosp_external_bluetooth_bluedroid" remote="aospxs" revision="aosp-4.4" />
   <project path="external/libsepol" name="aosp_external_libsepol" remote="aospxs" revision="aosp-4.4" />
